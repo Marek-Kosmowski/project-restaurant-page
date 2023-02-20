@@ -2,13 +2,16 @@ function homePage() {
     const content = document.getElementById('content');
     const headingContainer = document.createElement('div');
     headingContainer.classList.add('heading-container');
-    const heading = document.createElement('div');
-    heading.classList.add('heading');
+
     const headingTitle = document.createElement('h1');
     headingTitle.innerHTML = 'TEST';
     content.appendChild(headingContainer);
-    headingContainer.appendChild(heading);
-    heading.appendChild(headingTitle);
+
+    const homepageContainer = document.createElement('div');
+    homepageContainer.classList.add('homepage-container');
+    content.appendChild(homepageContainer);
+    homepageContainer.appendChild(headingContainer)
+    headingContainer.appendChild(headingTitle)
 }
 
 export default homePage;

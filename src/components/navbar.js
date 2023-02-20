@@ -1,5 +1,5 @@
 function header() {
-    const content = document.querySelector('#content');
+    const content = document.getElementById('content');
     const navbar = document.createElement('div');
     navbar.classList.add('navbar')
     const navbarList = document.createElement('ul');

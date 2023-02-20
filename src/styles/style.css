@@ -3,8 +3,12 @@
 }
 
 #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   width: 100vw;
+  background-color: bisque;
 }
 
 .navbar {
@@ -28,4 +32,25 @@
   border: 2px solid red;
   cursor: pointer;
   background-color: crimson;
+}
+
+.homepage-container {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 85%;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: blueviolet;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  background-color: blanchedalmond;
+  width: 60%;
+  height: 10%;
 }
