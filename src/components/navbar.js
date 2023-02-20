@@ -1,7 +1,9 @@
 function header() {
-    const body = document.querySelector('body');
-    const navbar = document.createElement('navbar');
+    const content = document.querySelector('#content');
+    const navbar = document.createElement('div');
+    navbar.classList.add('navbar')
     const navbarList = document.createElement('ul');
+    navbarList.classList.add('navbar-list')
     const navTab = ['Home', 'Menu', 'Contact'];
 
     for (let i = 0; i < navTab.length; i++) {
@@ -11,7 +13,7 @@ function header() {
     }
 
 
-    body.appendChild(navbar);
+    content.appendChild(navbar);
     navbar.appendChild(navbarList);
 
 
