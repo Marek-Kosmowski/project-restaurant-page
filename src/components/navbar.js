@@ -1,26 +1,37 @@
-function header() {
-    const content = document.getElementById('content');
-    const navbar = document.createElement('div');
-    navbar.classList.add('navbar')
-    const navbarList = document.createElement('ul');
-    navbarList.classList.add('navbar-list')
-    const navTab = ['Home', 'Menu', 'Contact'];
+function homeBtn() {
+    const homeButton = document.createElement('button');
+    homeButton.classList.add('home-button')
+    homeButton.innerText = 'HOME'
+    return homeButton;
+}
 
-    for (let i = 0; i < navTab.length; i++) {
-        const navElement = document.createElement('li');
-        navElement.innerHTML = navTab[i];
-        navbarList.appendChild(navElement)
-    }
+function menuBtn() {
+    const menuButton = document.createElement('button');
+    menuButton.classList.add('menu-button');
+    menuButton.innerText = 'MENU'
+    return menuButton;
+}
 
-
-    content.appendChild(navbar);
-    navbar.appendChild(navbarList);
-
-
-
-
-
+function contactBtn() {
+    const contactButton = document.createElement('button');
+    contactButton.classList.add('contact-button');
+    contactButton.innerText = 'CONTACT'
+    return contactButton;
 }
 
 
-export default header;
+function navbar() {
+    const content = document.getElementById('content');
+    const navButtonsContainer = document.createElement('nav-btns-container');
+    content.appendChild(navButtonsContainer);
+    const home = homeBtn();
+    const menu = menuBtn();
+    const contact = contactBtn();
+    navButtonsContainer.appendChild(home);
+    navButtonsContainer.appendChild(menu);
+    navButtonsContainer.appendChild(contact);
+}
+
+
+
+export default navbar;
