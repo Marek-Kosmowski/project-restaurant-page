@@ -1,16 +1,38 @@
-function menuPage() {
-    // const content = document.getElementById('content');
+import starterPage from "./starterpage";
+import {
+    mojito,
+    blueKamikaze,
+    thaiBreeze,
+    mimosa
+} from "./drinks";
 
-    // const pageTitleContainer = document.createElement('div');
-    // pageTitleContainer.classList.add('title-container')
+
+
+
+function categoryContainer() {
+    const drinksContainer = document.createElement('div');
+    menuContainer.appendChild(categoryContainer);
+
+}
+
+
+
+function menuPage() {
+    const content = document.getElementById('content');
     const pageTitle = document.querySelector('.hero-title')
-    // pageTitle.classList.add('hero-title');
     pageTitle.innerHTML = 'MENU'
-    // content.appendChild(navbar);
-    // const pageNavbar = navbar();
-    // content.appendChild(pageNavbar);
-    // content.appendChild(pageTitleContainer);
-    // pageTitleContainer.appendChild(pageTitle);
+    const menuContainer = document.createElement('div');
+    menuContainer.classList.add('menu-drinks-container')
+    content.append(menuContainer);
+    const menuCategoryTitle = document.createElement('h1')
+    menuCategoryTitle.innerHTML = 'DRINKS'
+    menuContainer.appendChild(menuCategoryTitle);
+    const drinkMojito = mojito();
+    const drinkBlueKamikaze = blueKamikaze();
+    const drinkThaiBreeze = thaiBreeze();
+    const drinkMimosa = mimosa();
+    menuContainer.append(drinkMojito, drinkBlueKamikaze, drinkThaiBreeze, drinkMimosa);
+
 
 }
 
