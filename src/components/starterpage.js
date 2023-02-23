@@ -33,10 +33,12 @@ function workingHoursContent() {
     hoursTitle.innerHTML = 'Hours';
 
     for (let key in workingHours) {
-        hoursContainer.append(`${key} ${workingHours[key]}`)
+        // hoursContainer.append(`${key} ${workingHours[key]}`)
+        const para = document.createElement('p');
+        para.innerHTML = `${key}: ${workingHours[key]}`;
+        hoursContainer.append(para)
     }
     return hoursContainer;
-
 
 }
 
