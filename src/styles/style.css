@@ -12,6 +12,12 @@
   background-color: bisque;
 }
 
+
+.hours-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* .navbar {
   display: flex;
   justify-content: center;
