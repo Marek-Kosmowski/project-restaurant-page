@@ -42,11 +42,6 @@ function workingHoursContent() {
 
 }
 
-
-
-
-
-
 function starterPage() {
     const content = document.getElementById('content');
     const pageContent = document.createElement('div');
@@ -56,8 +51,10 @@ function starterPage() {
     pageTitleContainer.classList.add('title-container');
     const pageTitle = document.createElement('h1');
     pageTitle.classList.add('hero-title');
+    pageTitle.innerHTML = 'Welcome To Magical Place'
     const aboutSection = aboutContent();
     const workingHours = workingHoursContent();
+    content.appendChild(pageTitle);
     content.appendChild(aboutSection);
     content.appendChild(workingHours);
 
