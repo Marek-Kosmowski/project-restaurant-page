@@ -19,10 +19,11 @@ function removeContactContent() {
 
 function removeMenuContent() {
     const content = document.getElementById('content');
+    const pageContent = document.querySelector('.page-content-container')
     const drinkMenu = document.querySelector('.menu-drinks-container')
     if (drinkMenu) {
         drinkMenu.classList.add('hidden');
-        content.removeChild(drinkMenu);
+        pageContent.removeChild(drinkMenu);
     }
 }
 

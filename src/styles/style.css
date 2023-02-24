@@ -14,12 +14,12 @@
 }
 
 .hours-container {
+  height: 40%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.hidden {
-  display: none;
+  justify-content: space-around;
 }
 
 .disable {
@@ -39,13 +39,37 @@ button {
 .nav-btns-container {
   margin-top: 20px;
   width: 25%;
-  height: 10%;
+  height: 5%;
   display: flex;
   justify-content: space-between;
 }
 
-.page-content-container{
+.page-content-container {
+  width: 60%;
+  height: 60%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-container p {
+  text-align: center;
+}
+.about-title {
+  margin-bottom: 10px;
+}
+.hours-title {
+  margin-bottom: 10px;
+}
+.hidden {
+  display: none;
 }
 /* 
 .navbar-list {

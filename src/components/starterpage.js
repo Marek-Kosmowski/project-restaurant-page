@@ -16,6 +16,7 @@ function aboutContent() {
     const aboutContainer = document.createElement('div');
     aboutContainer.classList.add('about-container');
     const aboutTitle = document.createElement('h2');
+    aboutTitle.classList.add('about-title')
     aboutTitle.innerHTML = 'About';
     const about = document.createElement('p');
     about.innerHTML = 'Nam lacinia nibh at pretium blandit. Aliquam aliquet ex nibh, vitae pellentesque sapien faucibus eget. Pellentesque iaculis dictum gravida. Morbi euismod nisi id enim auctor, tincidunt vestibulum metus fringilla.'
@@ -30,7 +31,7 @@ function workingHoursContent() {
     const hoursTitle = document.createElement('h2');
     hoursContainer.appendChild(hoursTitle);
     hoursTitle.classList.add('hours-title')
-    hoursTitle.innerHTML = 'Hours';
+    hoursTitle.innerHTML = 'Open Hours:';
 
     for (let key in workingHours) {
         const para = document.createElement('p');
