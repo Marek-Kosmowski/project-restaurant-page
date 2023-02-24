@@ -33,6 +33,12 @@ function removeHomeContent() {
     hoursContainer.classList.add('hidden');
 }
 
+homeBtn.addEventListener('click', () => {
+    removeMenuContent();
+    homePage();
+    removeContactContent();
+})
+
 menuBtn.addEventListener('click', () => {
     const drinkMenu = document.querySelector('.menu-drinks-container')
     removeHomeContent();
@@ -42,24 +48,13 @@ menuBtn.addEventListener('click', () => {
     removeContactContent()
 });
 
-homeBtn.addEventListener('click', () => {
-    removeMenuContent();
-    homePage();
-    removeContactContent();
-})
-
 contactBtn.addEventListener('click', () => {
     const contactContentPage = document.querySelector('.content-container');
-    const menuDrinksContainer = document.querySelector('.menu-drinks-container');
     removeHomeContent();
-    if (menuDrinksContainer) {
-        menuDrinksContainer.classList.add('hidden');
-        content.removeChild(menuDrinksContainer);
-    }
+    removeMenuContent();
     if (!contactContentPage) {
         contactPage();
     }
 })
-
 
 starterPage();
