@@ -9,16 +9,15 @@ const contactBtn = document.querySelector('.contact-button');
 
 
 function removeContactContent() {
-    const content = document.getElementById('content');
+    const pageContent = document.querySelector('.page-content-container')
     const contactContentPage = document.querySelector('.content-container');
     if (contactContentPage) {
         contactContentPage.classList.add('hidden')
-        content.removeChild(contactContentPage);
+        pageContent.removeChild(contactContentPage);
     }
 }
 
 function removeMenuContent() {
-    const content = document.getElementById('content');
     const pageContent = document.querySelector('.page-content-container')
     const drinkMenu = document.querySelector('.menu-drinks-container')
     if (drinkMenu) {

@@ -23,12 +23,12 @@ function createAddressContainer() {
 
 function createContactPage() {
 
-    const content = document.getElementById('content');
+    const pageContent = document.querySelector('.page-content-container');
     const contentContainer = document.createElement('div');
     contentContainer.classList.add('content-container');
     const createPhone = createPhoneContainer();
     const createAddress = createAddressContainer();
-    content.appendChild(contentContainer);
+    pageContent.appendChild(contentContainer);
     contentContainer.append(createPhone, createAddress);
 
 }

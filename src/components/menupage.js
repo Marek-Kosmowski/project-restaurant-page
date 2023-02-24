@@ -9,14 +9,14 @@ import {
 
 
 function menuPage() {
-    const pageTitle = document.querySelector('.hero-title')
-    const pageContent = document.querySelector('.page-content-container')
-    pageTitle.innerHTML = 'MENU'
+    const pageTitle = document.querySelector('.hero-title');
+    const pageContent = document.querySelector('.page-content-container');
+    pageTitle.innerHTML = 'MENU';
     const menuContainer = document.createElement('div');
-    menuContainer.classList.add('menu-drinks-container')
-    menuContainer.classList.add('visible')
+    menuContainer.classList.add('menu-drinks-container');
+    menuContainer.classList.add('visible');
     pageContent.appendChild(menuContainer);
-    const menuCategoryTitle = document.createElement('h1')
+    const menuCategoryTitle = document.createElement('h1');
     menuCategoryTitle.innerHTML = 'DRINKS'
     menuContainer.appendChild(menuCategoryTitle);
     const drinkMojito = mojito();

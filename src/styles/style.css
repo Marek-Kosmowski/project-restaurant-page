@@ -71,6 +71,46 @@ button {
 .hidden {
   display: none;
 }
+
+.content-container {
+  height: 70%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.phone-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 150px;
+  background-color: #660708;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 150px;
+  background-color: #660708;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+
+.phone-container h2 {
+  margin-bottom: 15px;
+}
+.address-container h2 {
+  margin-bottom: 15px;
+}
 /* 
 .navbar-list {
   width: 30%;
