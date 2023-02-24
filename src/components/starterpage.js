@@ -33,7 +33,6 @@ function workingHoursContent() {
     hoursTitle.innerHTML = 'Hours';
 
     for (let key in workingHours) {
-        // hoursContainer.append(`${key} ${workingHours[key]}`)
         const para = document.createElement('p');
         para.innerHTML = `${key}: ${workingHours[key]}`;
         hoursContainer.append(para)
@@ -57,8 +56,6 @@ function starterPage() {
     content.appendChild(pageTitle);
     content.appendChild(aboutSection);
     content.appendChild(workingHours);
-
-
 }
 
 export default starterPage;
