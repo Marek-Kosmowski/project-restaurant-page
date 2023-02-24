@@ -9,7 +9,7 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: bisque;
+  background-color: #0b090a;
 }
 
 .hours-container {
@@ -21,7 +21,7 @@
   display: none;
 }
 
-.disable{
+.disable {
   pointer-events: none;
 }
 /* .navbar {
