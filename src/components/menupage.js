@@ -1,9 +1,9 @@
 import starterPage from "./starterpage";
 import {
-    mojito,
-    blueKamikaze,
-    thaiBreeze,
-    mimosa
+    mojitoDrink,
+    blueKamikazeDrink,
+    thaiBreezeDrink,
+    mimosaDrink
 } from "./drinks";
 
 
@@ -21,10 +21,10 @@ function menuPage() {
     menuCategoryTitle.classList.add('menu-container-title');
     menuCategoryTitle.innerHTML = 'DRINKS'
     menuContainer.appendChild(menuCategoryTitle);
-    const drinkMojito = mojito();
-    const drinkBlueKamikaze = blueKamikaze();
-    const drinkThaiBreeze = thaiBreeze();
-    const drinkMimosa = mimosa();
+    const drinkMojito = mojitoDrink();
+    const drinkBlueKamikaze = blueKamikazeDrink();
+    const drinkThaiBreeze = thaiBreezeDrink();
+    const drinkMimosa = mimosaDrink();
     menuContainer.append(drinkMojito, drinkBlueKamikaze, drinkThaiBreeze, drinkMimosa);
     return pageContent;
 }
