@@ -59,7 +59,6 @@ function starterPage() {
     content.appendChild(workingHours);
 
 
-
 }
 
 export default starterPage;
