@@ -22,7 +22,8 @@ function contactBtn() {
 
 function navbar() {
     const content = document.getElementById('content');
-    const navButtonsContainer = document.createElement('nav-btns-container');
+    const navButtonsContainer = document.createElement('div');
+    navButtonsContainer.classList.add('nav-btns-container')
     content.appendChild(navButtonsContainer);
     const home = homeBtn();
     const menu = menuBtn();

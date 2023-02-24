@@ -10,6 +10,7 @@
   height: 100vh;
   width: 100vw;
   background-color: #0b090a;
+  color: #d3d3d3;
 }
 
 .hours-container {
@@ -24,13 +25,25 @@
 .disable {
   pointer-events: none;
 }
-/* .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: aqua;
-  height: 10%;
+
+button {
+  width: 90px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #660708;
+  border: 2px solid #e5383b;
+  cursor: pointer;
+  color: #d3d3d3;
 }
+
+.nav-btns-container {
+  margin-top: 20px;
+  width: 25%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+/* 
 .navbar-list {
   width: 30%;
   display: flex;
