@@ -7,38 +7,58 @@ const homeBtn = document.querySelector('.home-button');
 const menuBtn = document.querySelector('.menu-button');
 const contactBtn = document.querySelector('.contact-button');
 
+
+function removeContactContent() {
+    const content = document.getElementById('content');
+    const contactContentPage = document.querySelector('.content-container');
+    if (contactContentPage) {
+        contactContentPage.classList.add('hidden')
+        content.removeChild(contactContentPage);
+    }
+}
+
+function removeMenuContent() {
+    const content = document.getElementById('content');
+    const drinkMenu = document.querySelector('.menu-drinks-container')
+    if (drinkMenu) {
+        drinkMenu.classList.add('hidden');
+        content.removeChild(drinkMenu);
+    }
+}
+
+function removeHomeContent() {
+    const aboutContainer = document.querySelector('.about-container');
+    const hoursContainer = document.querySelector('.hours-container');
+    aboutContainer.classList.add('hidden');
+    hoursContainer.classList.add('hidden');
+}
+
 menuBtn.addEventListener('click', () => {
     const drinkMenu = document.querySelector('.menu-drinks-container')
-    const aboutContainer = document.querySelector('.about-container');
-    const hoursContainer = document.querySelector('.hours-container')
-    aboutContainer.classList.add('hidden')
-    hoursContainer.classList.add('hidden')
+    removeHomeContent();
     if (!drinkMenu) {
         menuPage();
     }
+    removeContactContent()
 });
 
 homeBtn.addEventListener('click', () => {
-    const menuDrinksContainer = document.querySelector('.menu-drinks-container');
-    if (menuDrinksContainer) {
-        menuDrinksContainer.classList.add('hidden');
-        content.removeChild(menuDrinksContainer);
-    }
+    removeMenuContent();
     homePage();
+    removeContactContent();
 })
 
 contactBtn.addEventListener('click', () => {
+    const contactContentPage = document.querySelector('.content-container');
     const menuDrinksContainer = document.querySelector('.menu-drinks-container');
-    const aboutContainer = document.querySelector('.about-container');
-    const hoursContainer = document.querySelector('.hours-container')
-    aboutContainer.classList.add('hidden')
-    hoursContainer.classList.add('hidden')
+    removeHomeContent();
     if (menuDrinksContainer) {
         menuDrinksContainer.classList.add('hidden');
         content.removeChild(menuDrinksContainer);
     }
-    contactPage();
-
+    if (!contactContentPage) {
+        contactPage();
+    }
 })
 
 
