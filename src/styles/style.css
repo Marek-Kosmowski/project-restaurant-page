@@ -43,6 +43,10 @@ button {
   display: flex;
   justify-content: space-between;
 }
+
+.page-content-container{
+  display: flex;
+}
 /* 
 .navbar-list {
   width: 30%;

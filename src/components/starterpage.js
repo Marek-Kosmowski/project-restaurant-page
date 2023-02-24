@@ -53,9 +53,9 @@ function starterPage() {
     pageTitle.innerHTML = 'Welcome To Magical Place'
     const aboutSection = aboutContent();
     const workingHours = workingHoursContent();
-    content.appendChild(pageTitle);
-    content.appendChild(aboutSection);
-    content.appendChild(workingHours);
+    pageContent.appendChild(pageTitle);
+    pageContent.appendChild(aboutSection);
+    pageContent.appendChild(workingHours);
 }
 
 export default starterPage;
