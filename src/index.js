@@ -20,8 +20,10 @@ function removeContactContent() {
 function removeMenuContent() {
     const pageContent = document.querySelector('.page-content-container')
     const drinkMenu = document.querySelector('.menu-drinks-container')
+    const menuPage = document.querySelector('.menu-page')
     if (drinkMenu) {
         drinkMenu.classList.add('hidden');
+        menuPage.classList.remove('menu-page')
         pageContent.removeChild(drinkMenu);
     }
 }
