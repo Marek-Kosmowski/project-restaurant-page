@@ -7,9 +7,7 @@ function mojito() {
     drinkDescription.innerHTML = 'Flor de Cana Rum, fresh limes, Cane Sugar, fresh Mint,(Mango, Lychee, Passion Fruit, Strawberry, Kiwi or Ginger flavor add $1)';
     const drinkPrice = document.createElement('h4');
     drinkPrice.innerHTML = '$5.80'
-    drinkContainer.appendChild(drinkName)
-    drinkContainer.appendChild(drinkDescription)
-    drinkContainer.appendChild(drinkPrice)
+    drinkContainer.append(drinkName, drinkDescription, drinkPrice);
 
     return drinkContainer;
 }
@@ -23,9 +21,7 @@ function thaiBreeze() {
     drinkDescription.innerHTML = 'Mekhong Thai Rum, Thai Punch (Pineapple, Cranberry, Lime)';
     const drinkPrice = document.createElement('h4');
     drinkPrice.innerHTML = '$7.20'
-    drinkContainer.appendChild(drinkName)
-    drinkContainer.appendChild(drinkDescription)
-    drinkContainer.appendChild(drinkPrice)
+    drinkContainer.append(drinkName, drinkDescription, drinkPrice);
 
     return drinkContainer;
 }
@@ -39,9 +35,7 @@ function blueKamikaze() {
     drinkDescription.innerHTML = 'GREY GOOSE, fresh lemon, blue curacao & Sprite';
     const drinkPrice = document.createElement('h4');
     drinkPrice.innerHTML = '$6.50'
-    drinkContainer.appendChild(drinkName)
-    drinkContainer.appendChild(drinkDescription)
-    drinkContainer.appendChild(drinkPrice)
+    drinkContainer.append(drinkName, drinkDescription, drinkPrice);
 
     return drinkContainer;
 }
@@ -55,9 +49,7 @@ function mimosa() {
     drinkDescription.innerHTML = 'Santa Marina Prosecco (Lychee, Strawberry, Mango, Passion Fruit or Guava)';
     const drinkPrice = document.createElement('h4');
     drinkPrice.innerHTML = '$6.80'
-    drinkContainer.appendChild(drinkName)
-    drinkContainer.appendChild(drinkDescription)
-    drinkContainer.appendChild(drinkPrice)
+    drinkContainer.append(drinkName, drinkDescription, drinkPrice);
 
     return drinkContainer;
 }
